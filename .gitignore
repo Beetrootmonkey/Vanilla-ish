@@ -25,3 +25,7 @@ saves/*
 journeymap/*
 crash-reports/*
 backups/*
+usercache.json
+usernamecache.json
+logs/*
+minecraftinstance.json
