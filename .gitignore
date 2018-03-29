@@ -31,3 +31,4 @@ logs/*
 minecraftinstance.json
 config/InvTweaks.cfg
 config/splash.properties
+config/JEI/*
