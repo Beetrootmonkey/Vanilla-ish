@@ -1,0 +1,137 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  CCLCorePlugin (CodeChickenLib-1.10.2-2.5.9.320-universal.jar)
+  LoadingPlugin (Quark-r1.1-70.jar)
+  FMLPlugin (InventoryTweaks-1.61-58.jar)
+  CTMCorePlugin (CTM-MC1.10.2-0.2.3.26.jar)
+Contact their authors BEFORE contacting forge
+
+// I bet Cylons wouldn't have this problem.
+
+Time: 3/1/18 3:36 PM
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from denseores (denseores)
+Caused by: com.rwtema.denseores.ProxyClient$1: Dense Ores requires CompatLayer to run in Minecraft 1.10.2
+	at com.rwtema.denseores.ProxyClient.wrap(ProxyClient.java:20)
+	at com.rwtema.denseores.DenseOresMod.preInit(DenseOresMod.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:616)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:243)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:145)
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:624)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:259)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:439)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:351)
+	at net.minecraft.client.main.Main.main(SourceFile:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+Caused by: com.rwtema.denseores.DenseOresMod$1: Dense Ores requires CompatLayer to run in Minecraft 1.10.2
+	... 37 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1256824736 bytes (1198 MB) / 1897922560 bytes (1810 MB) up to 5726797824 bytes (5461 MB)
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx6144m -Xms256m -XX:PermSize=256m
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.32 Powered by Forge 12.18.3.2511 51 mods loaded, 51 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCH	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCH	FML{8.0.99.99} [Forge Mod Loader] (forge-1.10.2-12.18.3.2511.jar) 
+	UCH	Forge{12.18.3.2511} [Minecraft Forge] (forge-1.10.2-12.18.3.2511.jar) 
+	UCH	ccl-entityhook{1.0} [ccl-entityhook] (CodeChickenLib-1.10.2-2.5.9.320-universal.jar) 
+	UCH	hardlib{1} [HardLib] (1.10.2-HardLib-v1b.jar) 
+	UCH	harderfarming{1.1.0b} [Harder Farming] (1.10.2-Harderfarming-1.1.0b.jar) 
+	UCH	customoregen{1.10.2} [customoregen] (CustomOreGen-1.10.2-1.4.5.jar) 
+	UCH	oreflowers{1.1.1a} [Ore Flowers] (1.10.2-OreFlowers-1.1.1a.jar) 
+	UCH	harderores{1.1.1g} [Harder Ores] (1.10.2-HarderOres-1.1.1g.jar) 
+	UCH	infinitylib{1.10.2-0.11.0} [InfinityLib] (infinitylib-0.11.0.jar) 
+	UCH	agricraft{2.0.0-0.11.0-a21} [AgriCraft] (agricraft-2.0.0-0.11.0-a21.jar) 
+	UCH	JEI{3.14.7.420} [Just Enough Items] (jei_1.10.2-3.14.7.420.jar) 
+	UCH	appleskin{1.0.9} [AppleSkin] (AppleSkin-mc1.10.2-1.0.9.jar) 
+	UCH	Quark{r1.1-70} [Quark] (Quark-r1.1-70.jar) 
+	UCH	AutoRegLib{1.0-2} [AutoRegLib] (AutoRegLib-1.0-2.jar) 
+	UCH	betterbuilderswands{0.11.1} [Better Builder's Wands] (BetterBuildersWands-1.10.2-0.11.1.220+f8232fe.jar) 
+	UCH	ceramics{1.10.2-1.1.6b} [Ceramics] (Ceramics-1.10.2-1.1.6b.jar) 
+	UCH	Chameleon{1.10.2-2.3.0} [Chameleon] (Chameleon-1.10.2-2.3.0.jar) 
+	UCH	ChestTransporter{2.5.18} [Chest Transporter] (ChestTransporter-1.10.2-2.5.18.jar) 
+	UCH	ctm{MC1.10.2-0.2.3.26} [CTM] (CTM-MC1.10.2-0.2.3.26.jar) 
+	UCH	chisel{MC1.10.2-0.2.0.43} [Chisel] (Chisel-MC1.10.2-0.2.0.43.jar) 
+	UCH	chiselsandbits{12.17} [Chisels & Bits] (chiselsandbits-12.17.jar) 
+	UCH	CodeChickenLib{2.5.9.320} [CodeChicken Lib] (CodeChickenLib-1.10.2-2.5.9.320-universal.jar) 
+	UCH	CodeChickenCore{2.4.1.102} [CodeChicken Core] (CodeChickenCore-1.10.2-2.4.1.102-universal.jar) 
+	UCH	compatlayer{0.3.1} [compatlayer] (compatlayer-1.10-0.3.1.jar) 
+	UCH	cookingforblockheads{4.2.45} [Cooking for Blockheads] (CookingForBlockheads_1.10.2-4.2.45.jar) 
+	UCH	crafttweakerjei{1.0.1} [CraftTweaker JEI Support] (CraftTweaker-1.10.2-3.0.26.jar) 
+	UCH	MineTweaker3{3.0.26} [MineTweaker 3] (CraftTweaker-1.10.2-3.0.26.jar) 
+	UCH	ctgui{1.0.0} [CT-GUI] (CraftTweaker-1.10.2-3.0.26.jar) 
+	UCH	StorageDrawers{1.10.2-3.7.10} [Storage Drawers] (StorageDrawers-1.10.2-3.7.10.jar) 
+	UCH	bitdrawers{0.36} [Drawers & Bits] (DrawersBits-1.10.2-0.36.jar) 
+	UCH	EnderStorage{2.2.1.106} [EnderStorage] (EnderStorage-1.10.2-2.2.1.106-universal.jar) 
+	UCH	fastleafdecay{v11} [Fast Leaf Decay] (FastLeafDecay-v11.jar) 
+	UCH	ftbl{0.0.0} [FTBLib] (FTBLib-1.1x-3.6.5.jar) 
+	UCH	ftbu{0.0.0} [FTBUtilities] (FTBUtilities-1.1x-3.6.5.jar) 
+	UCH	gravestone{1.5.13} [Gravestone Mod] (gravestone-1.5.13.jar) 
+	UCH	hopperducts{1.4.8.1} [Hopper Ducts] (hopperducts-mc1.9.4-1.4.8.1.jar) 
+	UCH	inventorytweaks{1.61-58-a1fd884} [Inventory Tweaks] (InventoryTweaks-1.61-58.jar) 
+	UCH	ironbackpacks{1.10.2-2.2.33} [Iron Backpacks] (IronBackpacks-1.10.2-2.2.33.jar) 
+	UCH	ironchest{1.10.2-7.0.15.804} [Iron Chest] (ironchest-1.10.2-7.0.15.804.jar) 
+	UCH	journeymap{1.10.2-5.5.2} [JourneyMap] (journeymap-1.10.2-5.5.2.jar) 
+	UCH	jeresources{0.5.8.98} [Just Enough Resources] (JustEnoughResources-1.10.2-0.5.8.98.jar) 
+	UCH	mtlib{@VERSION@} [MTLib] (MTLib-1.0.3.jar) 
+	UCH	modtweaker{2.0.13} [Mod Tweaker] (ModTweaker2-2.0.13.jar) 
+	UCH	Morpheus{1.10.2-3.1.13} [Morpheus] (Morpheus-1.10.2-3.1.13.jar) 
+	UCH	netherportalfix{1.0} [NetherPortalFix] (NetherPortalFix_1.10.2-3.3.7.jar) 
+	UCH	nmsot{1.2.0-mc1.10.2} [No Mob Spawning on Trees] (NoMobSpawningOnTrees-1.2.0-mc1.10.2.jar) 
+	UCH	harvestcraft{1.10.2j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.10.2j.jar) 
+	UCH	xreliquary{1.10.2-1.3.3.664} [Reliquary] (Reliquary-1.10.2-1.3.3.664.jar) 
+	UCH	theoneprobe{1.4.19} [The One Probe] (theoneprobe-1.1x-1.4.19.jar) 
+	UCE	denseores{1.0} [denseores] (denseores-1.11-1.0.2.jar) 
+	Loaded coremods (and transformers): 
+CCLCorePlugin (CodeChickenLib-1.10.2-2.5.9.320-universal.jar)
+  codechicken.lib.asm.ClassHeirachyManager
+  codechicken.lib.asm.CCL_ASMTransformer
+LoadingPlugin (Quark-r1.1-70.jar)
+  vazkii.quark.base.asm.ClassTransformer
+FMLPlugin (InventoryTweaks-1.61-58.jar)
+  invtweaks.forge.asm.ContainerTransformer
+CTMCorePlugin (CTM-MC1.10.2-0.2.3.26.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 390.65' Renderer: 'GeForce GTX 560 Ti/PCIe/SSE2'
+	CodeChickenLib Invalid Fingerprint Reports: 
+	CodeChickenCore Invalid Fingerprint Reports: 
+	EnderStorage Invalid Fingerprint Reports: 
