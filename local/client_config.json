@@ -1,6 +1,6 @@
 {
   "ftbu": {
-    "render_badges": true,
+    "render_badges": false,
     "trash_can": true,
     "toggle": {
       "gamemode": true,
