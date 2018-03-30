@@ -28,7 +28,6 @@ backups/*
 usercache.json
 usernamecache.json
 logs/*
-minecraftinstance.json
 config/InvTweaks.cfg
 config/splash.properties
 config/JEI/*
