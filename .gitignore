@@ -29,3 +29,7 @@ config/InvTweaks.cfg
 config/splash.properties
 config/JEI/*
 config/chiselsandbits_clipboard.cfg
+usercache.json
+config/attributestudios/wolfarmor.cfg
+config/ceanimals.cfg
+minecraftinstance.json

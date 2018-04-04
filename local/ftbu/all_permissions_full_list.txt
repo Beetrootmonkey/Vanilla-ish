@@ -1,4 +1,4 @@
-4054 nodes in total
+4059 nodes in total
 
 command.CTGUI: CMD
 command.achievement: CMD
@@ -4177,6 +4177,11 @@ ftbu.claims.item.theoneprobe.probe: ALL
 ftbu.claims.item.theoneprobe.probe_goggles: ALL
 ftbu.claims.item.theoneprobe.probenote: ALL
 ftbu.claims.item.wholetreeaxe.wholetreeaxe: ALL
+ftbu.claims.item.wolfarmor.chain_wolf_armor: ALL
+ftbu.claims.item.wolfarmor.diamond_wolf_armor: ALL
+ftbu.claims.item.wolfarmor.gold_wolf_armor: ALL
+ftbu.claims.item.wolfarmor.iron_wolf_armor: ALL
+ftbu.claims.item.wolfarmor.leather_wolf_armor: ALL
 ftbu.claims.modify.others: OP
 ftbu.claims.modify.self: ALL
 ftbu.claims.upgrade.loaded: ALL
